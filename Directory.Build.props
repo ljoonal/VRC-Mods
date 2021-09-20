@@ -1,0 +1,55 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <BaseOutputPath>../bin</BaseOutputPath>
+    <BuildProjectReferences>false</BuildProjectReferences>
+    <Deterministic>true</Deterministic>
+    <CopyLocal>false</CopyLocal>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugSymbols Condition="'$(Configuration)'=='Release'">false</DebugSymbols>
+    <DebugType Condition="'$(Configuration)'=='Release'">None</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <VRCPath Condition="Exists('C:/Program Files (x86)/Steam/steamapps/common/VRChat/')">C:/Program Files (x86)/Steam/steamapps/common/VRChat/</VRCPath>
+    <VRCPath Condition="Exists('$(HOME)/.steam/steam/steamapps/common/VRChat/')">$(HOME)/.steam/steam/steamapps/common/VRChat/</VRCPath>
+
+    <GameRefsPath>Libs/</GameRefsPath>
+    <GameRefsPath Condition="Exists('$(VRCPath)MelonLoader/Managed/')">$(VRCPath)MelonLoader/Managed/</GameRefsPath>
+
+    <VRCModRefsPath>Libs/</VRCModRefsPath>
+    <VRCModRefsPath Condition="Exists('$(VRCPath)Mods/')">$(VRCPath)Mods/</VRCModRefsPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MelonLoader">
+      <HintPath>Libs/MelonLoader.dll</HintPath>
+      <HintPath Condition="Exists('$(VRCPath)MelonLoader/MelonLoader.dll')">$(VRCPath)MelonLoader/MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameRefsPath)Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(GameRefsPath)Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>$(GameRefsPath)UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameRefsPath)UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameRefsPath)UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+  <!-- make all references non-private, so they won't be copied to the output folder -->
+  <Target Name="ClearReferenceCopyLocalPaths" AfterTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Remove="@(ReferenceCopyLocalPaths)" />
+    </ItemGroup>
+  </Target>
+</Project>

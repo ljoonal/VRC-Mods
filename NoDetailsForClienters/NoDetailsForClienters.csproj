@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Reference Include="Photon-DotNet">
+      <HintPath>$(GameRefsPath)Photon-DotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
