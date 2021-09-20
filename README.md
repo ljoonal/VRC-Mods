@@ -25,10 +25,9 @@ This repository might contain some mods that they do not endorse, as they might 
 
 I've yet to be banned for using mods, but I've tried to be smart about it. So here's your 101 guide smort high IQ like me;
 
-Don't share screenshots/recordings or stream your client whilst using mods, because that's hard proof straight away of modifications.
-
-Secondly, don't annoy others with mods.
-All it can take is one report of you when you're obviously modding to get your account banned.
+- Don't be malicious.
+- Don't share screenshots/recordings or stream your client whilst using mods, because that's hard proof straight away of modifications.
+- Hide that you're using mods in instances with people who're not your friends, because all it can take is one report when you're obviously modding to get your account banned.
 
 ## Mod list<!-- omit in toc -->
 
