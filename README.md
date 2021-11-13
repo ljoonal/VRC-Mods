@@ -1,6 +1,6 @@
 # VRC Mods<!-- omit in toc -->
 
-[![Tested on 1134](https://img.shields.io/badge/Build-1134-brightgreen?style=flat&logo=steam)](https://store.steampowered.com/app/438100/VRChat/)
+[![Tested on 1149](https://img.shields.io/badge/Build-1149-brightgreen?style=flat&logo=steam)](https://store.steampowered.com/app/438100/VRChat/)
 [![GPL-3](https://img.shields.io/badge/license-GPL--3-black?style=flat&logo=open-source-initiative)](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
 [![Lines of code](https://img.shields.io/tokei/lines/git.ljoonal.xyz/ljoonal/VRC-Mods?label=lines&style=flat&logo=C-Sharp)](https://vrc.ljoonal.xyz)
 
