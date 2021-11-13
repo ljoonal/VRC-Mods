@@ -6,6 +6,11 @@
 
 This repository contains my mods for [VRChat](https://store.steampowered.com/app/438100/VRChat/), using [MelonLoader](https://github.com/LavaGang/MelonLoader).
 
+I try to minimize the things that a single mod of mine does.
+That way my mods hopefully don't need that many updates, and maintenance of them will be easy.
+Because I value stability over adding many fancy new features.
+So a mod not receiving updates can just mean that it's still working just fine as intended.
+
 To install, just follow the [MelonLoader wiki's instructions](https://melonwiki.xyz/#/README).
 After that just drag'n'drop the DLL's into the `Mods` folder.
 If you need help join the [VRChat modding group][VRCMG] to see the guide if you've not done that already.
