@@ -35,22 +35,20 @@ It might only take a single report to get you banned if you're being naughty, bu
 
 If you want the feature enough to get the mod for it, you should probably also go upvote the canny ticket if there is one.
 
-- [Color Customizer](#color-customizer)
+- [Trust Color Changer](#trust-color-changer)
 - [No Details for Clienters](#no-details-for-clienters)
 
-### Color Customizer
+### Trust Color Changer
 
 [![Canny][CannyBadge]](https://feedback.vrchat.com/feature-requests/p/custom-colors)
 
-A mod to allow customizing the colors. Formerly known as TrustColorChanger
+A mod to allow customizing the trust colors.
 
 Currently implemented:
 
 - [x] Trust Color Value
 - [ ] Trust Color in Toggles
 - [ ] Turst Color in Safety Settings page
-- [ ] Menu Background color
-- [ ] Loading screen background color
 
 Credit to emm for being the first one to do this afaik.
 
