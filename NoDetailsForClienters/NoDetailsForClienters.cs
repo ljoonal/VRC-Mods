@@ -18,7 +18,7 @@ namespace NoDetailsForClienters
 
 		public const string name = "No Details For Clienters";
 
-		public const string version = "0.1.1";
+		public const string version = "0.1.2";
 	}
 
 	public class NoDetailsForClientersMod : MelonMod
