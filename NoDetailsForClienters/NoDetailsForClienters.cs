@@ -14,7 +14,7 @@ namespace NoDetailsForClienters
 
 		public const string company = null;
 
-		public const string downloadLink = "https://github.com/ljoonal/VRC-NoDetailsForClienters";
+		public const string downloadLink = "https://vrc.ljoonal.xyz";
 
 		public const string name = "No Details For Clienters";
 
@@ -59,7 +59,7 @@ namespace NoDetailsForClienters
 			catch (System.Exception ex)
 			{
 				patchingSuccess = false;
-				MelonLogger.Error($"Failed to patch FPS: {ex}");
+				LoggerInstance.Error($"Failed to patch FPS: {ex}");
 			}
 
 			try // Patch `ExitGames.Client.Photon.PhotonPeer.RoundTripTime` to use our Harmony PatchPing Prefix
@@ -72,10 +72,10 @@ namespace NoDetailsForClienters
 			catch (System.Exception ex)
 			{
 				patchingSuccess = false;
-				MelonLogger.Error($"Failed to patch ping: {ex}");
+				LoggerInstance.Error($"Failed to patch ping: {ex}");
 			}
 
-			if (patchingSuccess) MelonLogger.Msg("Applied successfully.");
+			if (patchingSuccess) LoggerInstance.Msg("Applied successfully.");
 		}
 
 		// No need to run variance updates on so often as Update, so using OnFixedUpdate
