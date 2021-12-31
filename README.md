@@ -83,6 +83,10 @@ You might also want to check out knah's [HWID patch](https://github.com/knah/ML-
 
 Credit to null from the VRC modding group discord for mentioning the values to use for spoofing.
 
+As an additional warning, the reason this mod is not verified in the modding group is as follows:
+
+> Ping/FPS spoofing is known to break IK interpolation, is easily detectable by VRC (if they wanted to), and those numbers are available in vanilla client via debug overlays. Lots of downsides for vanishingly little benefit
+
 ## For developers<!-- omit in toc -->
 
 ### Building<!-- omit in toc -->
