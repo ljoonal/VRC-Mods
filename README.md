@@ -49,6 +49,8 @@ If you want the feature enough to get the mod for it, you should probably also g
 
 A mod to allow customizing the trust colors.
 
+![Example image](res/TrustColorChanger.jpg)
+
 Currently implemented:
 
 - [x] Trust Color Value
@@ -56,6 +58,9 @@ Currently implemented:
 - [ ] Turst Color in Safety Settings page
 
 Credit to emm for being the first one to do this afaik.
+
+Also keep your eyes open for [Styletor](https://github.com/knah/VRCMods#Styletor).
+Since it might eventually contain something that you can use to do the same with.
 
 ### No Details for Clienters
 
