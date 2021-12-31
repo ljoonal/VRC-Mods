@@ -78,9 +78,12 @@ namespace NoDetailsForClienters
 			if (patchingSuccess) LoggerInstance.Msg("Applied successfully.");
 		}
 
-		// No need to run variance updates on so often as Update, so using OnFixedUpdate
+		// Updating variance on FixedUpdate instead of coroutines for simplicity sake
 		public override void OnFixedUpdate()
 		{
+			// Short circuit if variances don't need to be updated.
+			if (PreferenceFPS.Value < 0 && PreferencePing.Value < 0) return;
+
 			// Only run variance every so often so that it doesn't jitter so much in an obvious way.
 			if (_next_variance_update_after < System.DateTime.Now)
 			{
