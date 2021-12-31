@@ -19,7 +19,7 @@ namespace TrustColorChanger
 
 		public const string name = "Trust Color Changer";
 
-		public const string version = "0.2.0";
+		public const string version = "0.2.1";
 	}
 
 	public class TrustColorChangerMod : MelonMod
